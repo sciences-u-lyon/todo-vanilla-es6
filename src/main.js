@@ -5,9 +5,12 @@ const store = new Store();
 const view = new View();
 
 const render = () => {
-  const { total, completed } = store.count();
+  const todoList = store.getTodoList();
 
-  view.render(store.todoList, total === completed, $todoList => {
+  const { total, completed } = store.count();
+  const allCompleted = total === completed;
+
+  view.render(todoList, allCompleted, $todoList => {
     $todoList.forEach($todo => {
 
       view.onToggleTodo($todo, checked => {

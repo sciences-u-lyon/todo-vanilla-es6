@@ -21,6 +21,15 @@ export class Store {
         completed: false
       }
     ];
+    this.filter = '';
+  }
+
+  /**
+   * Get the list of todos with the filter ('#/' or '#/active', '#/completed')
+   * @returns {Object} the filtered list of todos
+   */
+  getTodoList() {
+    return this.todoList;
   }
 
   /**
@@ -83,5 +92,13 @@ export class Store {
   updateTodo(id, title) {
     const todo = this.todoList.find(byId(id));
     todo.title = title;
+  }
+
+  /**
+   * Update the current filter
+   * @param {String} filter - '#/' or '#/active' or '#/completed'
+   */
+  updateFilter(filter) {
+
   }
 };

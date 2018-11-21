@@ -13,6 +13,7 @@ export class View {
     this.$main = qs('.main');
     this.$todoList = qs('.todo-list');
     this.$toggleAll = qs('.toggle-all');
+    this.$ahrefs = Array.from(qsAll('a', qs('.filters')));
   }
 
   /**
@@ -49,6 +50,9 @@ export class View {
     });
 
     this.$toggleAll.checked = allCompleted;
+
+    this.clearFilters();
+    this.selectFilter();
 
     this.displayTodoList(true);
 
@@ -157,5 +161,25 @@ export class View {
       }
       callback($input.value);
     });
+  }
+
+  getSelectedFilter() {
+    return window.location.hash || '#/';
+  }
+
+  clearFilters() {
+
+  }
+
+  selectFilter() {
+
+  }
+
+  /**
+   * Bind a callback function to the "hashchange" event on the window object
+   * @param {Function} callback - called with the selected filter
+   */
+  onFilterTodos(callback) {
+
   }
 }
