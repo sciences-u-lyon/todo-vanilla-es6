@@ -3,8 +3,7 @@ A simplified version of todomvc app with vanilla ES6
 
 ## Requirements
 
-- Node v8+ (https://github.com/creationix/nvm)
-- yarn (`npm install -g yarn`)
+- Node v8+ (https://nodejs.org/en/ -> download current version)
 - A code editor (Visual Studio Code)
 - Chrome v70+
 
@@ -12,12 +11,12 @@ A simplified version of todomvc app with vanilla ES6
 
 ### Install dependencies
 ```bash
-$ yarn
+$ npm install
 ```
 
 ### Run webpack development server
 ```bash
-$ yarn start
+$ npm start
 ```
 
 ## Assignments
