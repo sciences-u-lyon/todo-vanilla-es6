@@ -35,3 +35,7 @@ The code should be written inside `src/main.js` file. You will use the functions
 ## Documentation
 
 The differents methods from both classes `View` and `Store` are documented inside `out/index.html` (open with Chrome).
+
+## A faire pour le 10/12/2018, 23h59 😉
+
+[-> Instructions ici <-](./ASSIGNMENT.md)
