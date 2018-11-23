@@ -1,4 +1,7 @@
 # todo-vanilla-es6
+
+[![Join the chat at https://gitter.im/sciences-u-lyon/todo-vanilla-es6](https://badges.gitter.im/sciences-u-lyon/todo-vanilla-es6.svg)](https://gitter.im/sciences-u-lyon/todo-vanilla-es6?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A simplified version of todomvc app with vanilla ES6
 
 ## Requirements
